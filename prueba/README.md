@@ -1,6 +1,6 @@
-# PruebaInstalacionNuxtjs
+# prueba
 
-> My superior Nuxt.js project
+> My super-excellent Nuxt.js project
 
 ## Build Setup
 
