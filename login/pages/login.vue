@@ -75,24 +75,30 @@
             </div>
           </div>
           <div class="row fila9">
-            <div class="col-11 form-group fila9-1">
+            <div class="col-11 form-group inner-addon right-addon fila9-1">
               <label for="exampleInputPassword1" id="passregistro"
                 >Contraseña</label
               >
               <input type="password" class="form-control" id="casillapass" />
+              <a class="icone"><img src="../assets/hide.svg"/></a>
             </div>
           </div>
           <div class="row justify-content-center fila10">
-            <div class="col-4 fila10-1">
-              <label class="checkbox" id="checkrecuerdame"></label>
-              <label id="textocheck"> Recuérdame</label>
+            <div class="col-5 col-lg-4 fila10-1">
+              <label class="custom-radio-checkbox">
+                <input class="custom-radio-checkbox__input" type="checkbox" />
+                <span
+                  class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"
+                ></span>
+                Recuérdame
+              </label>
             </div>
-            <div class="col-6 fila10-2">
+            <div class="col-6 col-lg-5 fila10-2">
               <a href="" id="letrascontra">¿Has olvidado tu contraseña?</a>
             </div>
           </div>
           <div class="row fila11">
-            <div class="col-11 fila11-1">
+            <div class="col-12 fila11-1">
               <button
                 type="button"
                 class="btn btn-primary btn-lg btn-block"
@@ -111,259 +117,627 @@
 <style>
 @font-face {
   font-family: "Nexa-Xbold";
-  src: url("/static/Nexa/Nexa_V1_2012/Nexa\ Bold.otf");
+  src: url("../static/Nexa/Nexa_V2_2020/WEB/NexaTextDemo-Bold.woff");
+}
+@font-face {
+  font-family: "Nexa-Bold";
+  src: url("../static/Nexa/Nexa_V2_2020/WEB/NexaDemo-Bold.woff");
 }
 @font-face {
   font-family: "Lato-Regular";
   src: url("/static/Lato-Regular/Lato-Regular.ttf");
 }
+
 body {
   background-image: linear-gradient(#fa2398 100%, #dd1f94 100%);
 }
-@media (max-width: 823px) {
+@media (max-width: 766px) {
   body {
     background-image: none;
   }
 }
-.contenedorPrincipal {
-  width: 100%;
-  height: 660px;
-  background-color: white;
-  position: relative;
-}
-.contenedorImagen {
-  background-image: url("../assets/Light-Cover-Pattern-bg@2x.png");
-  background-size: 70%;
-}
-.fila1 {
-  height: 40px;
-  border: solid black 1px;
-}
-
-#img1 {
-  height: 24px;
-  width: 24px;
-  margin-left: 15px;
-  /* margin-bottom: 5px; */
-}
-.c1 {
-  text-align: left;
-}
-.span1 {
-  display: inline;
-
-  font-family: Nexa-XBold;
+.custom-radio-checkbox span {
+  font-family: Lato-Regular;
   font-size: 14px;
   color: #3b3b3b;
-  text-align: center;
-  line-height: 12px;
+  letter-spacing: 0;
+  line-height: 20px;
 }
-.c {
-  text-align: right;
+.custom-radio-checkbox__input {
+  margin-left: 15px;
 }
-.span2 {
-  display: inline-block;
-  letter-spacing: 1px;
+/* input[type="checkbox"] {
+  display: none;
+  border: 1px;
+}
 
-  /* width:  95px;
+input[type="checkbox"] + label {
+  height: 50px;
+  width: 50px;
+  background-image: none;
+  display: inline-block;
+}
+
+input[type="checkbox"]:checked + label {
+  background-image: url("../assets/check_for_checkbox.svg");
+} */
+
+.checkbox {
+  width: 22px;
+  height: 18px;
+  border: 1px solid #c0c2c8;
+  border-radius: 10%;
+}
+.checked {
+  background: url("../assets/check_for_checkbox.svg") no-repeat 30% 60%;
+  border: solid black 2px;
+}
+#show_hide_password {
+  z-index: 1;
+}
+
+@media (max-width: 766px) {
+  .icone img {
+    width: 25px;
+    height: 25px;
+  }
+  .inner-addon {
+    position: relative;
+  }
+  .inner-addon .icone {
+    position: absolute;
+    padding: 0%;
+    /* pointer-events: none; */
+  }
+  .right-addon .icone {
+    background-size: contain;
+    border: none;
+    outline: none;
+    margin-top: 0px;
+
+    z-index: 2;
+    opacity: 0.3;
+    right: 30px;
+    top: 33px;
+  }
+  .right-addon input {
+    padding-right: 30px;
+  }
+
+  .contenedorPrincipal {
+    width: 100%;
+    height: 660px;
+    background-color: white;
+    position: relative;
+  }
+  .contenedorImagen {
+    background-image: url("../assets/Light-Cover-Pattern-bg@2x.png");
+    background-size: 70%;
+  }
+  .fila1 {
+    height: 40px;
+    border: solid black 1px;
+  }
+
+  #img1 {
+    height: 24px;
+    width: 24px;
+    margin-left: 15px;
+    /* margin-bottom: 5px; */
+  }
+  .c1 {
+    text-align: left;
+  }
+  .span1 {
+    display: inline;
+
+    font-family: Nexa-XBold;
+    font-size: 14px;
+    color: #3b3b3b;
+    text-align: center;
+    line-height: 12px;
+  }
+  .c {
+    text-align: right;
+  }
+  .span2 {
+    display: inline-block;
+    letter-spacing: 1px;
+
+    /* width:  95px;
     height: 14px; */
 
-  font-family: Nexa-XBold;
-  font-size: 12px;
-  color: #3b3b3b;
-  text-align: center;
-  line-height: 13px;
+    font-family: Nexa-XBold;
+    font-size: 12px;
+    color: #3b3b3b;
+    text-align: center;
+    line-height: 13px;
 
-  text-decoration: underline #3b3b3b;
-}
+    text-decoration: underline #3b3b3b;
+  }
 
-#img2 {
-  height: 27px;
-  width: 27px;
-  margin-right: 15px;
-}
-.fila2 {
-  border: solid black 1px;
-}
-#logogrande {
-  margin-left: 99px;
-  margin-top: 24px;
-  margin-bottom: 5px;
-  height: 30px;
-  width: 223px;
-}
-.fila3 {
-  border: solid black 1px;
-  justify-content: center;
-  height: 75px;
-}
-#login {
-  margin-top: 40px;
-  font-family: Nexa-XBold;
-  font-size: 25px;
-  color: #1a1b1c;
-  letter-spacing: 1px;
-  text-align: center;
-  line-height: 30px;
-}
-.fila4 {
-  border: solid black 1px;
-  justify-content: center;
-}
-#accede {
-  font-family: Lato-Regular;
-  font-size: 14px;
-  color: #84868a;
-  letter-spacing: 0;
-  text-align: center;
-  line-height: 20px;
-}
-.fila5 {
-  border: solid black 1px;
-  justify-content: space-around;
-  height: 20px;
-  margin-top: 15px;
-}
-#letrasacceso {
-  font-family: Nexa-Bold;
-  font-size: 12px;
-  color: #3b3b3b;
-  text-align: center;
-  line-height: 12px;
-}
-.hr {
-  width: 33px;
-  margin: 5px;
-  background: #9ea0a4;
-  margin-right: 5px;
-  margin-left: 5px;
-  margin-top: 9px;
-}
-.fila6 {
-  justify-content: center;
-  border: solid black 1px;
-}
-.fila6-1,
-.fila6-2 {
-  border: solid black;
-  margin-right: 5px;
-}
+  #img2 {
+    height: 27px;
+    width: 27px;
+    margin-right: 15px;
+  }
+  .fila2 {
+    border: solid black 1px;
+    justify-content: center;
+  }
+  #logogrande {
+    margin-left: 19px;
+    margin-top: 24px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 223px;
+  }
+  .fila3 {
+    border: solid black 1px;
+    justify-content: center;
+    height: 75px;
+  }
+  #login {
+    margin-top: 40px;
+    font-family: Nexa-XBold;
+    font-size: 25px;
+    color: #1a1b1c;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .fila4 {
+    border: solid black 1px;
+    justify-content: center;
+  }
+  #accede {
+    font-family: Lato-Regular;
+    font-size: 14px;
+    color: #84868a;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 20px;
+  }
+  .fila5 {
+    border: solid black 1px;
+    justify-content: space-around;
+    height: 20px;
+    margin-top: 15px;
+  }
+  #letrasacceso {
+    font-family: Nexa-Bold;
+    font-size: 12px;
+    color: #3b3b3b;
+    text-align: center;
+    line-height: 12px;
+  }
+  .hr {
+    width: 33px;
+    margin: 5px;
+    background: #9ea0a4;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 9px;
+  }
+  .fila6 {
+    justify-content: center;
+    border: solid black 1px;
+  }
+  .fila6-1,
+  .fila6-2 {
+    border: solid black;
+    margin-right: 5px;
+  }
 
-.fila6-3 {
-  border: solid black;
+  .fila6-3 {
+    border: solid black;
+  }
+  .iconosredes {
+    margin-left: 0px;
+    margin-top: 23px;
+    cursor: pointer;
+  }
+  #face {
+    margin-right: 15px;
+  }
+  .fila7 {
+    border: solid black 1px;
+    justify-content: space-around;
+    height: 20px;
+    margin-top: 28px;
+  }
+  .hr2 {
+    width: 43px;
+    margin-top: 9px;
+    background: #9ea0a4;
+  }
+  .fila8 {
+    border: solid black 1px;
+    height: 80px;
+    margin-top: 20px;
+  }
+  .fila8-1 {
+    border: solid black 1px;
+    margin-left: 20px;
+  }
+  #emailregistro {
+    margin-bottom: 6px;
+    font-family: Lato-Regular;
+    font-size: 13px;
+    color: #3b3b3b;
+    letter-spacing: 0;
+    line-height: 13px;
+  }
+  #casillaemail {
+    height: 45px;
+    width: 99%;
+  }
+  #passregistro {
+    margin-bottom: 6px;
+    font-family: Lato-Regular;
+    font-size: 13px;
+    color: #3b3b3b;
+    letter-spacing: 0;
+    line-height: 13px;
+  }
+  #casillapass {
+    height: 45px;
+    width: 99%;
+  }
+  .fila9 {
+    border: solid black 1px;
+    height: 80px;
+    margin-top: 0px;
+  }
+  .fila9-1 {
+    border: solid black 1px;
+    margin-left: 20px;
+  }
+  .fila10 {
+    height: 35px;
+    border: solid black 1px;
+  }
+  .fila10-1 {
+    border: solid black 1px;
+    padding: 0%;
+    display: flex;
+    justify-content: start;
+  }
+  .fila10-2 {
+    border: solid black 1px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0%;
+  }
+  #textocheck {
+    font-family: Lato-Regular;
+    font-size: 14px;
+    color: #3b3b3b;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-bottom: 0px;
+    position: relative;
+  }
+  #letrascontra {
+    font-family: Lato-Regular;
+    font-size: 14px;
+    color: #fa2398;
+    letter-spacing: 0;
+    text-align: right;
+    line-height: 20px;
+    margin-top: 7px;
+    margin-right: 20px;
+  }
+
+  .fila11 {
+    border: solid black 1px;
+  }
+  .fila11-1 {
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+  }
+  #botonregistro {
+    width: 85%;
+    height: 50%;
+    margin-bottom: 15px;
+    background-color: #fa2398;
+    border-color: #fa2398;
+    margin-top: 8px;
+    border-radius: 4px;
+    font-family: Nexa-XBold;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
+  }
 }
-.iconosredes {
-  margin-left: 0px;
-  margin-top: 23px;
-  cursor: pointer;
-}
-#face {
-  margin-right: 15px;
-}
-.fila7 {
-  border: solid black 1px;
-  justify-content: space-around;
-  height: 20px;
-  margin-top: 28px;
-}
-.hr2 {
-  width: 43px;
-  margin-top: 9px;
-  background: #9ea0a4;
-}
-.fila8 {
-  border: solid black 1px;
-  height: 80px;
-  margin-top: 20px;
-}
-.fila8-1 {
-  border: solid black 1px;
-  margin-left: 20px;
-}
-#emailregistro {
-  margin-bottom: 6px;
-  font-family: Lato-Regular;
-  font-size: 13px;
-  color: #3b3b3b;
-  letter-spacing: 0;
-  line-height: 13px;
-}
-#casillaemail {
-  height: 45px;
-  width: 329px;
-}
-#passregistro {
-  margin-bottom: 6px;
-  font-family: Lato-Regular;
-  font-size: 13px;
-  color: #3b3b3b;
-  letter-spacing: 0;
-  line-height: 13px;
-}
-#casillapass {
-  height: 45px;
-  width: 329px;
-}
-.fila9 {
-  border: solid black 1px;
-  height: 80px;
-  margin-top: 0px;
-}
-.fila9-1 {
-  border: solid black 1px;
-  margin-left: 20px;
-}
-.fila10 {
-  height: 30px;
-  border: solid black 1px;
-}
-.fila10-1 {
-  border: solid black 1px;
-  padding: 0%;
-}
-.fila10-2 {
-  border: solid black 1px;
-  padding: 0%;
-}
-#textocheck {
-  font-family: Lato-Regular;
-  font-size: 14px;
-  color: #3b3b3b;
-  letter-spacing: 0;
-  line-height: 20px;
-  margin-bottom: 0px;
-}
-#letrascontra {
-  font-family: Lato-Regular;
-  font-size: 14px;
-  color: #fa2398;
-  letter-spacing: 0;
-  text-align: right;
-  line-height: 20px;
-  margin-left: 28px;
-  margin-top: 17px;
-}
-.fila11 {
-  border: solid black 1px;
-  height: 67px;
-}
-.fila11-1 {
-  border: solid black 1px;
-}
-#botonregistro {
-  width: 325px;
-  height: 40px;
-  margin-left: 25px;
-  margin-bottom: 5px;
-  background-color: #fa2398;
-  border-color: #fa2398;
-  margin-top: 15px;
-  border-radius: 4px;
-  font-family: Nexa-XBold;
-  font-size: 16px;
-  color: #ffffff;
-  letter-spacing: 0;
-  text-align: center;
-  line-height: 42px;
+@media (min-width: 766px) {
+  .icone img {
+    width: 25px;
+    height: 25px;
+  }
+  .inner-addon {
+    position: relative;
+  }
+  .inner-addon .icone {
+    position: absolute;
+    padding: 0%;
+    /* pointer-events: none; */
+  }
+  .right-addon .icone {
+    background-size: contain;
+    border: none;
+    outline: none;
+    margin-top: 0px;
+
+    z-index: 2;
+    opacity: 0.3;
+    right: 57px;
+    top: 33px;
+  }
+  .right-addon input {
+    padding-right: 30px;
+  }
+
+  .contenedorPrincipal {
+    height: 694px;
+    width: 409px;
+    background-color: white;
+    position: relative;
+    margin-top: 100px;
+    border-radius: 1%;
+    margin-bottom: 100px;
+  }
+  .contenedorImagen {
+    background-image: url("../assets/Light-Cover-Pattern-bg@2x.png");
+    background-size: 70%;
+  }
+  .fila1 {
+    height: 40px;
+    margin-top: 10px;
+    border: solid black 1px;
+  }
+
+  #img1 {
+    height: 24px;
+    width: 24px;
+    margin-left: 15px;
+    /* margin-bottom: 5px; */
+  }
+  .c1 {
+    text-align: left;
+  }
+  .span1 {
+    display: inline;
+
+    font-family: Nexa-XBold;
+    font-size: 14px;
+    color: #3b3b3b;
+    text-align: center;
+    line-height: 12px;
+  }
+  .c {
+    text-align: right;
+  }
+  .span2 {
+    display: inline-block;
+    letter-spacing: 1px;
+
+    /* width:  95px;
+    height: 14px; */
+
+    font-family: Nexa-XBold;
+    font-size: 12px;
+    color: #3b3b3b;
+    text-align: center;
+    line-height: 13px;
+
+    text-decoration: underline #3b3b3b;
+  }
+
+  #img2 {
+    height: 27px;
+    width: 27px;
+    margin-right: 15px;
+  }
+  .fila2 {
+    border: solid black 1px;
+    justify-content: center;
+  }
+  #logogrande {
+    margin-left: 19px;
+    margin-top: 24px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 223px;
+  }
+  .fila3 {
+    border: solid black 1px;
+    justify-content: center;
+    height: 75px;
+    margin-top: 10px;
+  }
+  #login {
+    margin-top: 37px;
+    font-family: Nexa-XBold;
+    font-size: 25px;
+    color: #1a1b1c;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .fila4 {
+    border: solid black 1px;
+    justify-content: center;
+  }
+  #accede {
+    font-family: Lato-Regular;
+    font-size: 14px;
+    color: #84868a;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 20px;
+  }
+  .fila5 {
+    border: solid black 1px;
+    justify-content: space-around;
+    height: 20px;
+    margin-top: 15px;
+  }
+  #letrasacceso {
+    font-family: Nexa-Bold;
+    font-size: 12px;
+    color: #3b3b3b;
+    text-align: center;
+    line-height: 12px;
+  }
+  .hr {
+    width: 33px;
+    margin: 5px;
+    background: #9ea0a4;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 9px;
+  }
+  .fila6 {
+    justify-content: center;
+    border: solid black 1px;
+  }
+  .fila6-1,
+  .fila6-2 {
+    border: solid black;
+    margin-right: 5px;
+  }
+
+  .fila6-3 {
+    border: solid black;
+  }
+  .iconosredes {
+    margin-left: 0px;
+    margin-top: 23px;
+    cursor: pointer;
+  }
+  #face {
+    margin-right: 15px;
+  }
+  .fila7 {
+    border: solid black 1px;
+    justify-content: space-around;
+    height: 20px;
+    margin-top: 28px;
+  }
+  .hr2 {
+    width: 43px;
+    margin-top: 9px;
+    background: #9ea0a4;
+  }
+  .fila8 {
+    border: solid black 1px;
+    height: 80px;
+    margin-top: 20px;
+  }
+  .fila8-1 {
+    border: solid black 1px;
+    margin-left: 35px;
+  }
+  #emailregistro {
+    margin-bottom: 6px;
+    font-family: Lato-Regular;
+    font-size: 13px;
+    color: #3b3b3b;
+    letter-spacing: 0;
+    line-height: 13px;
+  }
+  #casillaemail {
+    height: 45px;
+    width: 90%;
+  }
+  #passregistro {
+    margin-bottom: 6px;
+    font-family: Lato-Regular;
+    font-size: 13px;
+    color: #3b3b3b;
+    letter-spacing: 0;
+    line-height: 13px;
+  }
+  #casillapass {
+    height: 45px;
+    width: 90%;
+  }
+  .fila9 {
+    border: solid black 1px;
+    height: 80px;
+    margin-top: 0px;
+  }
+  .fila9-1 {
+    border: solid black 1px;
+    margin-left: 35px;
+  }
+  .fila10 {
+    height: 35px;
+    border: solid black 1px;
+  }
+  .fila10-1 {
+    border: solid black 1px;
+    padding: 0%;
+    display: flex;
+    justify-content: start;
+  }
+  .fila10-2 {
+    border: solid black 1px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0%;
+  }
+  #textocheck {
+    font-family: Lato-Regular;
+    font-size: 14px;
+    color: #3b3b3b;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-bottom: 0px;
+    position: relative;
+  }
+  .custom-radio-checkbox__input {
+    margin-left: 0px;
+  }
+  #letrascontra {
+    font-family: Lato-Regular;
+    font-size: 14px;
+    color: #fa2398;
+    letter-spacing: 0;
+    text-align: right;
+    line-height: 20px;
+    margin-top: 7px;
+    margin-right: 12px;
+  }
+
+  .fila11 {
+    border: solid black 1px;
+  }
+  .fila11-1 {
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+  }
+  #botonregistro {
+    width: 77%;
+    height: 50%;
+    margin-bottom: 15px;
+    background-color: #fa2398;
+    border-color: #fa2398;
+    margin-top: 8px;
+    border-radius: 4px;
+    font-family: Nexa-XBold;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
+  }
 }
 </style>
