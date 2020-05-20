@@ -1,6 +1,6 @@
-# prueba
+# login
 
-> My super-excellent Nuxt.js project
+> My breathtaking Nuxt.js project
 
 ## Build Setup
 
