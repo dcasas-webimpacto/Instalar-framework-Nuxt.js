@@ -99,13 +99,8 @@
           </div>
           <div class="row fila11">
             <div class="col-12 fila11-1">
-              <button
-                type="button"
-                class="btn btn-primary btn-lg btn-block"
-                id="botonregistro"
-              >
-                Iniciar sesión
-              </button>
+              <boton />
+              <!--COMPONENTE BOTON -->
             </div>
           </div>
         </form>
@@ -114,6 +109,14 @@
   </div>
 </template>
 
+<script>
+import boton from "@/components/boton";
+export default {
+  components: {
+    boton
+  }
+};
+</script>
 <style>
 @font-face {
   font-family: "Nexa-Xbold";
@@ -438,21 +441,6 @@ input[type="checkbox"]:checked + label {
     justify-content: center;
     padding: 0%;
   }
-  #botonregistro {
-    width: 85%;
-    height: 50%;
-    margin-bottom: 15px;
-    background-color: #fa2398;
-    border-color: #fa2398;
-    margin-top: 8px;
-    border-radius: 4px;
-    font-family: Nexa-XBold;
-    font-size: 16px;
-    color: #ffffff;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 42px;
-  }
 }
 @media (min-width: 766px) {
   .icone img {
@@ -723,21 +711,6 @@ input[type="checkbox"]:checked + label {
     display: flex;
     justify-content: center;
     padding: 0%;
-  }
-  #botonregistro {
-    width: 77%;
-    height: 50%;
-    margin-bottom: 15px;
-    background-color: #fa2398;
-    border-color: #fa2398;
-    margin-top: 8px;
-    border-radius: 4px;
-    font-family: Nexa-XBold;
-    font-size: 16px;
-    color: #ffffff;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 42px;
   }
 }
 </style>
