@@ -24,7 +24,7 @@
           </div>
 
           <div class="row justify-content-center mt-1 filaA">
-            <div class="col-12">
+            <div class="col-12 col-sm-6">
               <span
                 class="span4"
               >Únete y disfruta de todas las ventajas: pedidos rápidos, descuento, promociones, beneficios y muchos más!</span>
@@ -56,13 +56,13 @@
           </div>
 
           <div class="row justify-content-center mt-4 filaA3">
-            <div class="col-2 m-2 m-sm-1">
+            <div class="col-2 col-sm-1 m-2 m-sm-1">
               <img src="~/assets/img/connect-Facebook-42px.svg" />
             </div>
-            <div class="col-2 m-2 m-sm-1">
+            <div class="col-2 col-sm-1 m-2 m-sm-1">
               <img src="~/assets/img/connect-Google-42px.svg" />
             </div>
-            <div class="col-2 m-2 m-sm-1">
+            <div class="col-2 col-sm-1 m-2 m-sm-1">
               <img src="~/assets/img/connect-Twitter-42px.svg" />
             </div>
           </div>
@@ -112,20 +112,20 @@
               <Contraseña nombre="Repetir contraseña" />
             </div>
           </div>
-          <div class="row pl-2 pr-2 mt-4 mb-4">
-            <div class="col-10 mb-2 colcheck">
+          <div class="row justify-content-around pl-2 pr-2 pl-0 pr-0 mt-4 mb-4">
+            <div class="col-10 col-sm-5 mb-2 colcheck">
               <Cbox contenido="Suscríbete a la Newsletter" />
               <small
                 id="helpId"
                 class="form-text text-muted"
               >Acceso exclusivo a noticias, nuevos productos, descuentos, sorteos y promociones especiales.</small>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-sm-6">
               <Cbox contenido="Confirmo que he leído y acepto la política de privacidad." />
             </div>
           </div>
-          <div class="row pl-1 pr-1 pb-4">
-            <div class="col-12">
+          <div class="row justify-content-center pl-1 pr-1 pb-4">
+            <div class="col-11">
               <Boton contenido="Regístrate" />
             </div>
           </div>
@@ -142,7 +142,7 @@ import Contraseña from "@/components/Register/Contraseña";
 import Cbox from "@/components/Register/Cbox";
 import Boton from "@/components/Register/Boton";
 export default {
-  //   layout: "Registro"
+  layout: "Registro",
   head: {
     title: "Registrate"
   },
