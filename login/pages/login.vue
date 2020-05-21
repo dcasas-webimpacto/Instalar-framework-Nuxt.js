@@ -75,16 +75,11 @@
             </div>
           </div>
           <div class="row fila9">
-            <div class="col-11 form-group inner-addon right-addon fila9-1">
-              <label for="exampleInputPassword1" id="passregistro"
-                >Contraseña</label
-              >
-              <input type="password" class="form-control" id="casillapass" />
-              <a class="icone"><img src="../assets/hide.svg"/></a>
-            </div>
+            <iconopass />
+            <!--COMPONENTE ICONO PASSWORD -->
           </div>
           <div class="row justify-content-center fila10">
-            <div class="col-5 col-lg-4 fila10-1">
+            <div class="col-5 col-md-4 col-lg-4 fila10-1">
               <label class="custom-radio-checkbox">
                 <input class="custom-radio-checkbox__input" type="checkbox" />
                 <span
@@ -93,13 +88,14 @@
                 Recuérdame
               </label>
             </div>
-            <div class="col-6 col-lg-5 fila10-2">
+            <div class="col-6 col-md-5 col-lg-5 fila10-2">
               <a href="" id="letrascontra">¿Has olvidado tu contraseña?</a>
             </div>
           </div>
           <div class="row fila11">
             <div class="col-12 fila11-1">
               <boton />
+
               <!--COMPONENTE BOTON -->
             </div>
           </div>
@@ -111,9 +107,18 @@
 
 <script>
 import boton from "@/components/boton";
+import iconopass from "@/components/iconopass";
+// import pruebacomponente from "@/components/pruebacomponente";
 export default {
   components: {
-    boton
+    boton,
+    iconopass
+    // pruebacomponente
+  },
+  methods: {
+    clickMe() {
+      alert("hola mundo");
+    }
   }
 };
 </script>
@@ -375,27 +380,13 @@ input[type="checkbox"]:checked + label {
     height: 45px;
     width: 99%;
   }
-  #passregistro {
-    margin-bottom: 6px;
-    font-family: Lato-Regular;
-    font-size: 13px;
-    color: #3b3b3b;
-    letter-spacing: 0;
-    line-height: 13px;
-  }
-  #casillapass {
-    height: 45px;
-    width: 99%;
-  }
+
   .fila9 {
     border: solid black 1px;
     height: 80px;
     margin-top: 0px;
   }
-  .fila9-1 {
-    border: solid black 1px;
-    margin-left: 20px;
-  }
+
   .fila10 {
     height: 35px;
     border: solid black 1px;
@@ -643,27 +634,13 @@ input[type="checkbox"]:checked + label {
     height: 45px;
     width: 90%;
   }
-  #passregistro {
-    margin-bottom: 6px;
-    font-family: Lato-Regular;
-    font-size: 13px;
-    color: #3b3b3b;
-    letter-spacing: 0;
-    line-height: 13px;
-  }
-  #casillapass {
-    height: 45px;
-    width: 90%;
-  }
+
   .fila9 {
     border: solid black 1px;
     height: 80px;
     margin-top: 0px;
   }
-  .fila9-1 {
-    border: solid black 1px;
-    margin-left: 35px;
-  }
+
   .fila10 {
     height: 35px;
     border: solid black 1px;
