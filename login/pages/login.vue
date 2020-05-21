@@ -125,15 +125,18 @@ export default {
 <style>
 @font-face {
   font-family: "Nexa-Xbold";
-  src: url("../static/Nexa/Nexa_V2_2020/WEB/NexaTextDemo-Bold.woff");
+  src: url("/login/static/Nexa/Nexa_V2_2020/WEB/NexaTextDemo-Bold.woff")
+    format("woff");
 }
 @font-face {
   font-family: "Nexa-Bold";
-  src: url("../static/Nexa/Nexa_V2_2020/WEB/NexaDemo-Bold.woff");
+  src: url("/login/static/Nexa/Nexa_V2_2020/WEB/NexaDemo-Bold.woff")
+    format("woff");
 }
 @font-face {
   font-family: "Lato-Regular";
-  src: url("/static/Lato-Regular/Lato-Regular.ttf");
+  /* src: url("static/Lato-Regular/Lato-Regular.ttf"); */
+  src: url("/login/static/Lato-Regular/Lato-Regular.ttf") format("truetype");
 }
 
 body {
@@ -395,7 +398,7 @@ input[type="checkbox"]:checked + label {
     border: solid black 1px;
     padding: 0%;
     display: flex;
-    justify-content: start;
+    /* justify-content: start; */
   }
   .fila10-2 {
     border: solid black 1px;
@@ -649,7 +652,7 @@ input[type="checkbox"]:checked + label {
     border: solid black 1px;
     padding: 0%;
     display: flex;
-    justify-content: start;
+    /* justify-content: start; */
   }
   .fila10-2 {
     border: solid black 1px;
