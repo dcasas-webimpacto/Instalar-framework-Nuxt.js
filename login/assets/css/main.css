@@ -6,33 +6,11 @@ body {
     background-image: none;
   }
 }
-@media (max-width: 344px) {
-  .fila10-2 {
-    display: flex;
+@media (max-width: 338px) {
+  .hr,
+  .hr2 {
+    display: none;
   }
-  #letrascontra {
-    font-family: Lato-Regular;
-    font-size: 14px;
-    color: #3b3b3b;
-    letter-spacing: 0;
-    line-height: 20px;
-    margin-right: 0px;
-  }
-}
-.fila10-2 {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0%;
-}
-#letrascontra {
-  font-family: Lato-Regular;
-  font-size: 14px;
-  color: #fa2398;
-  letter-spacing: 0;
-  text-align: right;
-  line-height: 20px;
-  margin-top: 7px;
-  margin-right: 20px;
 }
 
 .custom-radio-checkbox span {
@@ -46,21 +24,6 @@ body {
 .custom-radio-checkbox__input {
   margin-left: 15px;
 }
-/* input[type="checkbox"] {
-  display: none;
-  border: 1px;
-}
-
-input[type="checkbox"] + label {
-  height: 50px;
-  width: 50px;
-  background-image: none;
-  display: inline-block;
-}
-
-input[type="checkbox"]:checked + label {
-  background-image: url("../assets/check_for_checkbox.svg");
-} */
 
 .checkbox {
   width: 22px;
@@ -78,6 +41,21 @@ input[type="checkbox"]:checked + label {
 }
 
 @media (max-width: 766px) {
+  .fila10-2 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0%;
+  }
+  #letrascontra {
+    font-family: Lato-Regular;
+    font-size: 14px;
+    color: #fa2398;
+    letter-spacing: 0;
+    text-align: right;
+    line-height: 20px;
+    margin-top: 7px;
+    margin-right: 20px;
+  }
   .icone img {
     width: 25px;
     height: 25px;
@@ -220,8 +198,6 @@ input[type="checkbox"]:checked + label {
     margin-right: 5px;
   }
 
-  .fila6-3 {
-  }
   .iconosredes {
     margin-left: 0px;
     margin-top: 23px;
@@ -514,7 +490,7 @@ input[type="checkbox"]:checked + label {
     text-align: right;
     line-height: 20px;
     margin-top: 7px;
-    margin-right: 12px;
+    margin-right: 2px;
   }
 
   .fila11-1 {

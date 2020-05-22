@@ -14,7 +14,11 @@ export default {
   methods: {
     cambiacheck() {
       var checkk = document.getElementById("checknews");
-      checkk.setAttribute("class", "checked");
+      if (checkk.className == "checked") {
+        checkk.setAttribute("class", "checkbox");
+      } else {
+        checkk.setAttribute("class", "checked");
+      }
       //   console.log(checkk);
     }
   }
@@ -38,6 +42,9 @@ export default {
 }
 @media (max-width: 766px) {
   .checkbox {
+    margin-left: 17px;
+  }
+  .checked {
     margin-left: 17px;
   }
   #textocheck {

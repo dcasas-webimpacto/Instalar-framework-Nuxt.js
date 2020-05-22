@@ -12,8 +12,6 @@
 </template>
 
 <script>
-var campo = "#show_hide_password input";
-
 export default {
   methods: {
     mostrarpass() {
@@ -21,12 +19,10 @@ export default {
       var imagenojo = document.getElementById("imagenpass");
       if (campo.type == "password") {
         campo.type = "text";
-        // imagenojo.attr("src", "../assets/show.svg");
-        // imagenojo.replaceWith('<img src="../assets/show.svg">');
-        imagenojo.setAttribute("src", "../assets/show.svg");
-      } else {
+        imagenojo.setAttribute("src", "/_nuxt/assets/show.svg");
+      } else if (campo.type == "text") {
         campo.type = "password";
-        imagenojo.setAttribute("src", "../assets/hide.svg");
+        imagenojo.setAttribute("src", "/_nuxt/assets/hide.svg");
         // imagenojo.attr("src", "../assets/hide.svg");
       }
     }
@@ -62,7 +58,6 @@ export default {
     padding-right: 30px;
   }
   .fila9-1 {
-    border: solid black 1px;
     margin-left: 20px;
   }
   #passregistro {
@@ -106,7 +101,6 @@ export default {
     padding-right: 30px;
   }
   .fila9-1 {
-    border: solid black 1px;
     margin-left: 35px;
   }
   #passregistro {

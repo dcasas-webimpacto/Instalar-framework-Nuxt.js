@@ -79,11 +79,11 @@
             <!--COMPONENTE ICONO PASSWORD -->
           </div>
           <div class="row justify-content-center fila10">
-            <div class="col-5 col-md-4 col-lg-4 fila10-1">
+            <div class="col-4 col-md-4 col-lg-4 fila10-1">
               <pruebacheck />
               <!--COMPONENTE CHECKBOX -->
             </div>
-            <div class="col-6 col-md-5 col-lg-5 fila10-2">
+            <div class="col-7 col-md-5 col-lg-5 fila10-2">
               <a href="" id="letrascontra">¿Has olvidado tu contraseña?</a>
             </div>
           </div>
