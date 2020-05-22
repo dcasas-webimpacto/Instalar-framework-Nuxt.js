@@ -25,6 +25,10 @@ export default {
 };
 </script>
 <style scoped>
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("~static/Lato-Regular/Lato-Regular.ttf");
+}
 .checkbox {
   width: 18px;
   height: 18px;
@@ -40,6 +44,7 @@ export default {
   background: url("~assets/check.svg") no-repeat 30% 60%;
   border: solid black 1px;
 }
+
 @media (max-width: 766px) {
   .checkbox {
     margin-left: 17px;
@@ -47,6 +52,7 @@ export default {
   .checked {
     margin-left: 17px;
   }
+
   #textocheck {
     font-family: Lato-Regular;
     font-size: 14px;
@@ -54,8 +60,19 @@ export default {
     letter-spacing: 0;
     line-height: 20px;
     margin-bottom: 10px;
+    font-weight: bold;
   }
   label.custom-radio-checkbox {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 320px) {
+  #textocheck {
+    font-family: Lato-Regular;
+    font-size: 12px;
+    color: #3b3b3b;
+    letter-spacing: 0;
+    line-height: 20px;
     margin-bottom: 10px;
   }
 }
@@ -67,6 +84,7 @@ export default {
     letter-spacing: 0;
     line-height: 20px;
     margin-bottom: 10px;
+    font-weight: bold;
   }
   label.custom-radio-checkbox {
     margin-bottom: 10px;
