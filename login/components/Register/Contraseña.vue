@@ -2,7 +2,7 @@
   <div>
     <div class="inner-addon right-addon" id="show_hide_password">
       <label id="label" for>{{nombre}}</label>
-      <input type="password" id="password" class="form-control" aria-describedby="button-addon2" />
+      <input type="password" id class="form-control" aria-describedby="button-addon2" />
       <a href class="icone">
         <img class src="~/assets/img/hide.svg" />
       </a>

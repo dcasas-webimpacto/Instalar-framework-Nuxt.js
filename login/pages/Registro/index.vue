@@ -23,7 +23,7 @@
             </div>
           </div>
 
-          <div class="row justify-content-center mt-1 filaA">
+          <div class="row justify-content-center mt-1 mt-sm-0 filaA">
             <div class="col-12 col-sm-6">
               <span
                 class="span4"
@@ -49,7 +49,7 @@
             </div>
           </div>
 
-          <div class="row justify-content-center align-items-center mt-3 mt-sm-4 filaA2">
+          <div class="row justify-content-center align-items-center mt-3 mt-sm-5 filaA2">
             <hr class="hr" />
             <span class="span5">ACCESO RÁPIDO CON REDES SOCIALES</span>
             <hr class="hr" />
@@ -67,64 +67,64 @@
             </div>
           </div>
 
-          <div class="row justify-content-center align-items-center mt-4 mt-sm-0 filaA2">
+          <div class="row justify-content-center align-items-center mt-4 mt-sm-4 filaA2">
             <hr class="hr2" />
             <span class="span5">ACCESO CON EMAIL Y CONTRASEÑA</span>
             <hr class="hr2" />
           </div>
-          <div class="row justify-content-start align-items-center pl-2 g">
+          <div class="row justify-content-start align-items-center pl-2 pl-sm-4 mt-sm-5 g">
             <Radio nombre1="Hombre" nombre2="Mujer" />
           </div>
-          <div class="row justify-content-center align-items-center pl-2 pr-2 mt-3">
-            <div class="col-6 pr-2">
+          <div class="row justify-content-center align-items-center pl-2 pr-2 pl-sm-3 pr-sm-3 mt-3">
+            <div class="col-6 pr-2 pl-sm-4">
               <div class="form-group">
                 <label>Nombre</label>
                 <input type="text" class="form-control" id />
               </div>
             </div>
-            <div class="col-6 pl-2">
+            <div class="col-6 pl-2 pr-sm-4">
               <div class="form-group">
                 <label>Apellidos</label>
                 <input type="text" class="form-control" id />
               </div>
             </div>
           </div>
-          <div class="row justify-content-center pl-2 pr-2">
-            <div class="col-12 col-sm-6">
+          <div class="row justify-content-center pl-2 pr-2 pl-sm-3 pr-sm-3">
+            <div class="col-12 col-sm-6 pl-sm-4 pr-sm-1">
               <!-- <div class="row justify-content-start pl-2 pr-2 birth"> -->
               <label>Tu cumpleaños</label>
               <!-- </div> -->
               <Cumpleaños />
             </div>
 
-            <div class="col-12 col-sm-6 mt-2">
+            <div class="col-12 col-sm-6 mt-2 mt-sm-0 pl-sm-2 pr-sm-4">
               <div class="form-group">
                 <label>Email</label>
                 <input type="text" class="form-control" placeholder="Ej: tu@email.com" id />
               </div>
             </div>
           </div>
-          <div class="row justify-content-center pl-2 pr-2">
-            <div class="col-6 pr-2">
-              <Contraseña nombre="Contraseña" />
+          <div class="row justify-content-center pl-2 pr-2 pl-sm-3 pr-sm-3">
+            <div class="col-6 pr-2 pl-sm-4">
+              <Contraseña nombre="Contraseña" id="password1" />
             </div>
-            <div class="col-6 pl-2">
-              <Contraseña nombre="Repetir contraseña" />
+            <div class="col-6 pl-2 pr-sm-4">
+              <Contraseña nombre="Repetir contraseña" id="password2" />
             </div>
           </div>
-          <div class="row justify-content-around pl-2 pr-2 pl-0 pr-0 mt-4 mb-4">
-            <div class="col-10 col-sm-5 mb-2 colcheck">
+          <div class="row pl-2 pr-2 pl-sm-5 pr-sm-4 mt-4 mb-4 mt-sm-3">
+            <div class="col-10 col-sm-5 mb-2 pl-sm-0 mr-sm-5 colcheck">
               <Cbox contenido="Suscríbete a la Newsletter" />
               <small
                 id="helpId"
                 class="form-text text-muted"
               >Acceso exclusivo a noticias, nuevos productos, descuentos, sorteos y promociones especiales.</small>
             </div>
-            <div class="col-12 col-sm-6">
+            <div class="col-12 col-sm-6 pl-sm-0 pr-sm-0">
               <Cbox contenido="Confirmo que he leído y acepto la política de privacidad." />
             </div>
           </div>
-          <div class="row justify-content-center pl-1 pr-1 pb-4">
+          <div class="row justify-content-center pl-1 pr-1 pb-4 pl-sm-0 pr-sm-0">
             <div class="col-11">
               <Boton contenido="Regístrate" />
             </div>
