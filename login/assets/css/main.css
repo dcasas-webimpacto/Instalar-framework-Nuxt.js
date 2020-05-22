@@ -237,7 +237,7 @@ body {
   }
   .fila8 {
     height: 80px;
-    margin-top: 20px;
+    margin-top: 13px;
   }
   .fila8-1 {
     margin-left: 20px;
@@ -450,11 +450,13 @@ body {
   .hr2 {
     width: 43px;
     margin-top: 9px;
+    margin-left: 0px;
+    margin-right: 0px;
     background: #9ea0a4;
   }
   .fila8 {
     height: 80px;
-    margin-top: 20px;
+    margin-top: 13px;
   }
   .fila8-1 {
     margin-left: 35px;
