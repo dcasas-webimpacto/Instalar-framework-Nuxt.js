@@ -2,9 +2,15 @@
   <div>
     <div class="inner-addon right-addon" id="show_hide_password">
       <label id="label" for>{{nombre}}</label>
-      <input type="password" id class="form-control" aria-describedby="button-addon2" />
-      <a href class="icone">
-        <img class src="~/assets/img/hide.svg" />
+      <input
+        :type="passwordFieldType"
+        class="form-control"
+        aria-describedby="button-addon2"
+        v-model="password"
+      />
+      <a href class="icone" v-on:click.prevent="swittchImage()">
+        <img class src="~/assets/img/hide.svg" v-if="imageUrl" />
+        <img src="~/assets/img/show.svg" v-else />
       </a>
     </div>
   </div>
@@ -13,7 +19,23 @@
 
 <script>
 export default {
-  props: ["nombre"]
+  props: ["nombre"],
+  data() {
+    return {
+      password: "",
+      passwordFieldType: "password",
+      imageUrl: true
+    };
+  },
+  methods: {
+    swittchImage() {
+      this.passwordFieldType =
+        this.passwordFieldType === "password" ? "text" : "password";
+      this.passwordFieldType === "password"
+        ? (this.imageUrl = true)
+        : (this.imageUrl = false);
+    }
+  }
 };
 </script>
 

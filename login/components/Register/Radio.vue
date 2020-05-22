@@ -3,7 +3,13 @@
     <div>
       <label class="custom-radio-checkbox">
         <!-- Input oculto -->
-        <input class="custom-radio-checkbox__input" type="radio" checked />
+        <input
+          class="custom-radio-checkbox__input"
+          type="radio"
+          name="group"
+          value="radio1"
+          :checked="!isChecked"
+        />
         <!-- Imagen en sustitucion -->
         <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
         <!-- Texto -->
@@ -13,7 +19,13 @@
     <div>
       <label class="custom-radio-checkbox">
         <!-- Input oculto -->
-        <input class="custom-radio-checkbox__input" type="radio" />
+        <input
+          class="custom-radio-checkbox__input"
+          type="radio"
+          name="group"
+          value="radio2"
+          :checked="isChecked"
+        />
         <!-- Imagen en sustitucion -->
         <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
         <!-- Texto -->
@@ -24,7 +36,12 @@
 </template>
 <script>
 export default {
-  props: ["nombre1", "nombre2"]
+  props: ["nombre1", "nombre2"],
+  data() {
+    return {
+      isChecked: false
+    };
+  }
 };
 </script>
 
@@ -75,6 +92,7 @@ label {
   > .custom-radio-checkbox__input:checked
   + .custom-radio-checkbox__show--radio {
   background-color: #fa2398;
+  background-size: 50%;
 }
 
 /* Cambia el radio personalizado cuando es pulsado */

@@ -3,28 +3,32 @@
     <div class="row justify-content-center p-0 m-0 fila">
       <div class="contenedor">
         <div class="col">
-          <div class="row justify-content-around fila3 mt-2 mt-sm-3">
-            <div class="col-4 col-xs-5 col-sm-5 pl-2 pl-sm-3 c1">
-              <img id="img1" src="~/assets/img/go-back.svg" />
-              <span class="span1">Volver</span>
+          <div class="row fila1">
+            <div class="col-12">
+              <div class="row justify-content-around fila3 mt-2 mt-sm-3">
+                <div class="col-4 col-xs-5 col-sm-5 pl-2 pl-sm-3 c1">
+                  <img id="img1" src="~/assets/img/go-back.svg" />
+                  <span class="span1">Volver</span>
+                </div>
+                <div class="col-8 col-xs-7 col-sm-7 pr-2 c">
+                  <span class="span2">Ya tengo cuenta</span>
+                  <img id="img2" src="~/assets/img/User.svg" />
+                </div>
+              </div>
+              <div class="row filalogo justify-content-center mt-5">
+                <img src="~/assets/img/Nutritienda-simple_logo.svg" />
+              </div>
+
+              <div class="row justify-content-around mt-5 filaLoguin">
+                <div class="col-10 col-sm-10 new">
+                  <h4 class="span3">Crear nueva cuenta</h4>
+                </div>
+              </div>
             </div>
-            <div class="col-8 col-xs-7 col-sm-7 pr-2 c">
-              <span class="span2">Ya tengo cuenta</span>
-              <img id="img2" src="~/assets/img/User.svg" />
-            </div>
-          </div>
-          <div class="row filalogo justify-content-center mt-5">
-            <img src="~/assets/img/Nutritienda-simple_logo.svg" />
           </div>
 
-          <div class="row justify-content-around mt-5 filaLoguin">
-            <div class="col-8 col-sm-10 new">
-              <h4 class="span3">Crear nueva cuenta</h4>
-            </div>
-          </div>
-
-          <div class="row justify-content-center mt-1 mt-sm-0 filaA">
-            <div class="col-12 col-sm-6">
+          <div class="row justify-content-center filaA">
+            <div class="col-12 col-sm-7">
               <span
                 class="span4"
               >Únete y disfruta de todas las ventajas: pedidos rápidos, descuento, promociones, beneficios y muchos más!</span>
@@ -75,7 +79,9 @@
           <div class="row justify-content-start align-items-center pl-2 pl-sm-4 mt-sm-5 g">
             <Radio nombre1="Hombre" nombre2="Mujer" />
           </div>
-          <div class="row justify-content-center align-items-center pl-2 pr-2 pl-sm-3 pr-sm-3 mt-3">
+          <div
+            class="row justify-content-center align-items-center pl-2 pr-2 pl-sm-3 pr-sm-3 mt-3 mt-sm-2"
+          >
             <div class="col-6 pr-2 pl-sm-4">
               <div class="form-group">
                 <label>Nombre</label>
@@ -106,10 +112,10 @@
           </div>
           <div class="row justify-content-center pl-2 pr-2 pl-sm-3 pr-sm-3">
             <div class="col-6 pr-2 pl-sm-4">
-              <Contraseña nombre="Contraseña" id="password1" />
+              <Contraseña nombre="Contraseña" />
             </div>
             <div class="col-6 pl-2 pr-sm-4">
-              <Contraseña nombre="Repetir contraseña" id="password2" />
+              <Contraseña nombre="Repetir contraseña" />
             </div>
           </div>
           <div class="row pl-2 pr-2 pl-sm-5 pr-sm-4 mt-4 mb-4 mt-sm-3">
@@ -125,7 +131,7 @@
             </div>
           </div>
           <div class="row justify-content-center pl-1 pr-1 pb-4 pl-sm-0 pr-sm-0">
-            <div class="col-11">
+            <div class="col-12 col-sm-11">
               <Boton contenido="Regístrate" />
             </div>
           </div>
